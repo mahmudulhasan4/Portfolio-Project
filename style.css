@@ -1,0 +1,403 @@
+*{
+    box-sizing: border-box;
+}
+
+.nav-logo{
+    padding: 10px;
+} 
+.nav-heading{
+    color: white;
+    font-size: 1.2rem;
+    
+}
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.nav-menu a{
+    text-decoration: none;  
+    padding: 10px;
+    font-weight: bolder;
+    color: yellow;
+
+}
+.nav-menu a:hover{
+    background-color: aqua;  
+    border-radius: 10px;
+}
+p{
+    text-align: justify;
+    font-size:1.3rem;
+}
+
+[class*='col-']{
+    float:left;
+    padding: 20px;
+
+}
+[class*='col-']{
+    width: 100%;
+}
+.nav-bar{
+    background-color:cadetblue;
+    text-align: center;
+}
+.nav-bar::after{
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+.profile{
+    padding: 150px 0;
+    text-align: center;
+    position: relative;
+
+}
+.profile .top-weather-icon{
+    position:absolute;
+    left: 20px;
+    top: 20px;
+    border-radius: 50px;
+    transition:transform 2s linear;
+}
+
+.profile .bottom-weather-icon{
+    position:absolute;
+    left: 10px;
+    bottom: 20px;
+    border-radius: 50px;
+    transition:transform 2s linear;
+}
+.top-weather-icon:hover{
+    transform: rotate(360deg);
+}
+.bottom-weather-icon:hover{
+    transform: rotate(-360deg);
+}
+
+.desc {
+    font-family: 'Satisfy', cursive;
+}
+.desc h1 {
+    font-size: 3rem;
+
+}
+.desc p{
+    text-align: center;
+}
+.desc h1:hover{
+    color: rgb(119, 0, 255);
+
+}
+
+                /*new div*/
+
+.about-me{
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+h2{
+    text-align: center;
+}
+.hr-style{
+    border: dotted 6px white ;
+    border-bottom: none;
+    width: 200px;
+}
+
+.about-me-i img{
+        height: 220px;
+        width: 200px;
+        border: 2px solid rgb(121, 9, 9);
+        border-radius: 130px;
+        transition: transform 2s ;
+        
+}
+.about-me-i img:hover{
+     transform: rotate(360deg);
+    
+}
+.about-desc p {
+    color: whitesmoke;
+    
+}
+
+.cv-button{
+    background-color: darkcyan;
+    color: beige;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+.about-me::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+
+/*new div for professional score*/
+
+.professional-experience{
+    background-color: rgb(38, 126, 117);
+    padding: 1% 0 ;
+    font-family: 'Montserrat', sans-serif;
+}
+.card{
+    background-color: rgb(36, 86, 129);
+    color:aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 1s;
+    height: 700px;
+}
+.card h2{
+    background-color: rgb(24, 39, 39);
+}
+.lol{
+    padding: 5px;
+}
+.card:hover{
+    border: 2px solid red;
+    box-shadow: 4px 8px 12px rgb(181, 224, 25);
+}
+.card-icon{
+    text-align: center;
+}
+.img-d {
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 1px; 
+}
+.skils-container{
+    padding-right: 10px;
+}
+
+.skils-container  li{
+    list-style-type: none;
+    margin: 30px 10px;
+    padding: 10px;
+    font-weight: bolder;
+    color: rgb(241, 225, 225); 
+    text-transform: uppercase;  
+    position: relative;
+}
+.skils-container  li::before{
+    content: ' ';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color:rgb(218, 218, 12,.5);
+    border-radius: 1000px;
+}
+.skils-container  li::after{
+    content: ' ';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 0;
+    height: 20px;
+    background-color:rgb(218, 218, 12,1);
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+
+}
+.skils-container  li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+   to{
+      width:90%;
+   }
+}
+.skils-container  li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+   to{
+      width:90%;
+   }
+}
+.skils-container  li.boot-strap::after{
+    animation-name: boot-strap;
+}
+@keyframes boot-strap{
+   to{
+      width:80%;
+   }
+}
+.skils-container  li.java-script::after{
+    animation-name: java-script;
+}
+@keyframes java-script{
+   to{
+      width:70%;
+   }
+}
+.skils-container  li.react::after{
+    animation-name: react;
+}
+@keyframes react{
+   to{
+      width:75%;
+   }
+}
+.skils-container  li.phython::after{
+    animation-name: phython;
+}
+@keyframes phython{
+   to{
+      width:80%;
+   }
+}
+.skils-container  li.mogobd::after{
+    animation-name: mogobd;
+}
+@keyframes mogobd{
+   to{
+      width:80%;
+   }
+}
+
+
+
+.professional-experience::after{
+    clear: both;
+    display: table;
+    content: '';
+
+}
+
+/*new div*/
+.achievement {
+   padding: 1% 7%;
+   background-color: rgb(187, 159, 159);
+}
+.achievement-details{
+   text-align: center;
+}
+.achievement-details h2{
+    color:yellow;
+ }
+
+
+.contact-my h2{
+    color: yellow;
+}
+.contact-my form {
+    text-align: center;
+}
+.contact-my p{
+    text-align: center;
+}
+.contact-my input,textarea{
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    font-size: 1.3rem;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.jogo{
+    text-align: center;
+    border-radius: 10px;
+    background-color: aqua;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.more-way-contract{
+    text-align: center;
+}
+.more-way-contract h2{
+    color: yellow;
+    font-size: 2rem;
+}
+.media-button{
+    padding: 10px;
+    margin-top: 20px;
+
+}
+.media-button .btn{
+    padding: 10px;
+    border: 1px solid black;
+    color: #316FF6;
+    background-color: #f0f1f5;
+    font-size: 1.4rem;
+    border-radius: 10px;
+
+}
+.btn-1{
+    padding: 10px;
+    border: 1px solid black;
+    color: #CD201F;
+    background-color: #f0f1f5;
+    font-size: 1.4rem;
+    border-radius: 10px;
+
+}
+.btn-2{
+    padding: 10px;
+    border: 1px solid black;
+    color: #00aff0;
+    background-color: #f0f1f5;
+    font-size: 1.4rem;
+    border-radius: 10px;
+
+}
+.btn-3{
+    padding: 10px;
+    border: 1px solid black;
+    color: #0077b5;
+    background-color: #f0f1f5;
+    font-size: 1.4rem;
+    border-radius: 10px;
+
+}
+.btn-4{
+    padding: 10px;
+    border: 1px solid black;
+    color: #316FF6;
+    background-color: #f0f1f5;
+    font-size: 1.4rem;
+    border-radius: 10px;
+
+}
+.btn-5{
+    padding: 10px;
+    border: 1px solid black;
+    color: #316FF6;
+    background-color: #f0f1f5;
+    font-size: 1.4rem;
+    border-radius: 10px;
+
+}
+
+
+.achievement::after{
+    clear: both;
+    display: table;
+    content: '';
+
+}
